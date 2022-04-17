@@ -1,11 +1,11 @@
 from pygame_functions import *
 
-screenSize(1920,1080)
+screenSize(1920, 1080)
 
 mouseX = int(mouseX())
 mouseY = int(mouseY())
 
-s = makeSprite('textures/soap.png')
+s = makeSprite("textures/soap.png")
 
 showSprite(s)
 
@@ -14,33 +14,33 @@ sy = 300
 
 moveSprite(s, sx, sy)
 
-x=1
+x = 1
 
-while True:        
-    
-    if keyPressed('up'):
+while True:
+
+    if keyPressed("up"):
         x += 0.1
-        transformSprite(s,0, x)
+        transformSprite(s, 0, x)
         tick(120)
-    if keyPressed('down'):
+    if keyPressed("down"):
         x -= 0.1
-        transformSprite(s,0, x)
+        transformSprite(s, 0, x)
         tick(120)
     if x == 0.20000000000000015:
-        x=1
-    if keyPressed('w'):
+        x = 1
+    if keyPressed("w"):
         sy -= 5
         moveSprite(s, sx, sy)
         tick(120)
-    if keyPressed('s'):
+    if keyPressed("s"):
         sy += 5
         moveSprite(s, sx, sy)
         tick(120)
-    if keyPressed('a'):
+    if keyPressed("a"):
         sx -= 5
         moveSprite(s, sx, sy)
         tick(120)
-    if keyPressed('d'):
+    if keyPressed("d"):
         sx += 5
         moveSprite(s, sx, sy)
         tick(120)
@@ -60,4 +60,3 @@ while True:
     tick(120)
 
 endWait()
-        
