@@ -1,13 +1,15 @@
 from finalchanges import *
 
+
 def instState():
-    
-    setBackgroundImage('textures/instBoard.PNG')
-    instButtons = makeSprite('textures/instBoard.PNG')
-    instQuiz = makeSprite('textures/instButtons.png')
+
+    setBackgroundImage("textures/instBoard.PNG")
+    instButtons = makeSprite("textures/instBoard.PNG")
+    instQuiz = makeSprite("textures/instButtons.png")
+
 
 def start():
-    
+
     moveSprite(player, 88, 110)
     showSprite(virus0)
     showSprite(virus1)
@@ -66,10 +68,9 @@ def hide1():
     hideLabel(dev)
     setBackgroundImage("textures/baord.png")
     showSprite(player)
-    
+
     def quizFunc1():
-        
-        
+
         buttons = makeSprite("textures/buttons_nodisp.png")
         pause(500)
 
@@ -93,7 +94,7 @@ def hide1():
 
 
 def back():
-    
+
     hideAll()
     hideLabel(questionLabel)
     showSprite(virus0)
